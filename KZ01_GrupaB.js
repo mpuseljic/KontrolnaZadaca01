@@ -67,10 +67,12 @@ const peopleYouShouldKnow = {
 
 
 
+
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca neproste brojeve
 //INPUT: [3, 4, 5, 8, 11]
 //OUTPUT: [4, 5, 8]
+
 
 
 //ZAMJENA ZA 5 (4 BODA)
@@ -78,9 +80,14 @@ const peopleYouShouldKnow = {
 //INPUT: ["aa", "b1", "", null, "AAA"]
 //OUTPUT: ["AA","B1", "", null, "AAA"]
 function pretvoriSlova(unesiString){
-    
+    let String = []
+    for(let i = 0; i<unesiString.length; i++){
+        String += unesiString[i]
+    }
+    return String.toUpperCase()
     
 }
+console.log(pretvoriSlova(["aa", "b1", "", null, "AAA"]))
 
     
 
