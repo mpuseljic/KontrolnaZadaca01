@@ -63,6 +63,10 @@ const peopleYouShouldKnow = {
 }
 //INPUT: somePeople
 //OUTPUT: "Stroustrup"
+function najduljaVrijednost(unesi){
+    
+
+}
 
 
 
