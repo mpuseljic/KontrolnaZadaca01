@@ -46,7 +46,7 @@ function okreniString(string){
     for(let i = string.length -1; i >= 0; i--){
         noviString += string[i]
     }
-    console.log(noviString, noviString.length)
+    console.log(noviString,",", noviString.length)
     
 }
 okreniString("Pisanje zadataka nije jednostavan posao")
@@ -65,6 +65,8 @@ const peopleYouShouldKnow = {
 //OUTPUT: "Stroustrup"
 
 
+
+
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca neproste brojeve
 //INPUT: [3, 4, 5, 8, 11]
@@ -75,6 +77,10 @@ const peopleYouShouldKnow = {
 //Napisi funkciju u obliku arrow functiona koja pretvara mala slova danih inputa u velika slova
 //INPUT: ["aa", "b1", "", null, "AAA"]
 //OUTPUT: ["AA","B1", "", null, "AAA"]
+function pretvoriSlova(unesiString){
+    
+    
+}
 
     
 
@@ -106,10 +112,9 @@ const someEvents = [
 //OUTPUT: [{stateName: "Grcka", measuredTemperature: 48.0}]
 function manjaTemperatura(drzava, temp){
     let drzave = []
-    let najmanjaTemp = 0
     for(let drzava of someEvents){
-        if(drzava.measuredTemperature > najmanjaTemp){
-            najmanjaTemp = drzava.measuredTemperature
+        if(drzava.measuredTemperature < temp){
+            temp = drzava.measuredTemperature
             drzave.push({
                 stateName: drzava.stateName,
                 measuredTemperature: drzava.measuredTemperature
