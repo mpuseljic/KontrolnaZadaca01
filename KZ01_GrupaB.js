@@ -3,21 +3,53 @@
 function neParni(){
     for(let i = 0; i<101; i++){
         if(i%2 !== 0){
-            
+            console.log(i)
         }
     }
+    
 }
 neParni()
+
 
 //2 (3 BODA)
 //Napisi funkciju koja koristi switch selekciju za pretvaranje numerickog unosa u godisnje u doba. Za neispravan unos ispisi prikladnu poruku.
 //INPUT: 1; OUTPUT: "Jesen";
 //INPUT: 3; OUTPUT: "Ljeto"; 
+function Pretvaranje(unesi){
+    switch (unesi) {
+        case 1: console.log("Jesen")
+            
+            break;
+        case 2: console.log("Proljeće")
+        break;
+        break;
+        case 3: console.log("Ljeto")
+        break;
+        case 4: console.log("Zima")
+        break;
+        case 5: console.log("Unos nije ispravan")
+        break;
+        default:
+            break;
+    }  
+
+}
+Pretvaranje(3)
+
 
 //3 (4 BODA)
 //Napisi funkciju koja okrece uneseni string i broji charactere uzimajuci u obzir prazna mjesta (eng. whitespaces)
 //INPUT: "Pisanje zadataka nije jednostavan posao"
 //OUTPUT: ("oasop navatsondej ejin akatadaz ejnasiP", 39)
+function okreniString(string){
+    let noviString = ""
+    for(let i = string.length -1; i >= 0; i--){
+        noviString += string[i]
+    }
+    console.log(noviString, noviString.length)
+    
+}
+okreniString("Pisanje zadataka nije jednostavan posao")
 
 //4 (4 BODA)
 //Napisi funkciju koja odreduje najdulju vrijednostu u danom objektu
@@ -31,6 +63,10 @@ const peopleYouShouldKnow = {
 }
 //INPUT: somePeople
 //OUTPUT: "Stroustrup"
+function najduljaVrijednost(string){
+   let najdulji = peopleYouShouldKnow.filter((people) => {return })
+
+}
 
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca neproste brojeve
@@ -68,3 +104,5 @@ const someEvents = [
 ];
 //INPUT: (someStates, 48.5)
 //OUTPUT: [{stateName: "Grcka", measuredTemperature: 48.0}]
+
+
