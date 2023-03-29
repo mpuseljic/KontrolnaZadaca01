@@ -106,10 +106,18 @@ const someEvents = [
 //OUTPUT: [{stateName: "Grcka", measuredTemperature: 48.0}]
 function manjaTemperatura(drzava, temp){
     let drzave = []
-    
+    let najmanjaTemp = 0
     for(let drzava of someEvents){
-        if()
+        if(drzava.measuredTemperature > najmanjaTemp){
+            najmanjaTemp = drzava.measuredTemperature
+            drzave.push({
+                stateName: drzava.stateName,
+                measuredTemperature: drzava.measuredTemperature
+            })
+        }
     }
-
+    console.log(drzave)
 }
+
+manjaTemperatura("someStates", 48.5)
 
